@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
   s.watchos.deployment_target = "2.0"
 
-  s.resource_bundles = { 'PrivacyInfo.xcprivacy' => 'Source/PrivacyInfo.xcprivacy' }
-
+  s.resource_bundles = { 'Schedule' => 'Source/PrivacyInfo.xcprivacy' }
+  #s.resource = 'Source/*'
   s.requires_arc = true
 end
