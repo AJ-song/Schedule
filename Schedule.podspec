@@ -8,7 +8,8 @@ Pod::Spec.new do |s|
   s.author           = { "Quentin Jin" => "luoxiustm@gmail.com" }
 
   s.source           = { :git => "https://github.com/AJ-song/Schedule.git", :tag => "#{s.version}" }
-  s.source_files     = 'Sources/Schedule/*.swift', 'Sources/Resources/*.xcprivacy'
+  s.source_files     = 'Sources/Schedule/*.swift' #, 'Sources/Resources/*.xcprivacy'
+  s.resources        =  "Sources/Resources/*"
   s.swift_version    = "5.0"
 
   s.ios.deployment_target = "9.0"
@@ -16,6 +17,6 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
   s.watchos.deployment_target = "2.0"
 
-  s.resource_bundles = { 'Schedule' =>  ['Source/Resources/PrivacyInfo.xcprivacy'] }
+  #s.resource_bundles = { 'Schedule' =>  ['Source/Resources/PrivacyInfo.xcprivacy'] }
   s.requires_arc = true
 end
